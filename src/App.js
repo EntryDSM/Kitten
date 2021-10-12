@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { GlobalStyle } from "./style/globalStyle";
 function App() {
   return (
-    <></>
+    <GlobalStyle>
+
+    </GlobalStyle>
   );
 }
 
