@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const S = {
   Wrapper: styled.div`
+    position: relative;
     margin: 0px;
     padding: 0px;
     background-image: url(${(props) => props.img});
     background-size: 100% 860px;
-    width: 1920px;
+    width: 100%;
     height: 860px;
     -webkit-user-select: none;
     -moz-user-select: none;
