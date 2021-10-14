@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const S = {
   Wrapper: styled.div`
     margin: 0px;
@@ -50,10 +49,10 @@ export const S = {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     visibility: visible;
     .img {
-      width: 101.5%;
+      width: calc(101.5% + 1px);
       position: absolute;
       top: 133px;
-      right: -3px;
+      right: -4px;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
@@ -87,7 +86,7 @@ export const S = {
   `,
 
   Page: styled.p`
-    font-family: BM HANNA;
+    font-family: "Hanna", sans-serif;
     margin: 0px;
     padding: 0px;
     position: absolute;
@@ -119,7 +118,6 @@ export const S = {
   `,
 
   Title: styled.p`
-
     left: 320px;
     position: absolute;
     margin: 0px;
@@ -130,7 +128,7 @@ export const S = {
   `,
 
   Line2: styled.div`
-    top:410px;
+    top: 410px;
     left: 320px;
     position: absolute;
     border-bottom: 4px solid #ef6268;
@@ -138,7 +136,7 @@ export const S = {
   `,
 
   Desc: styled.p`
-  top:430px;
+    top: 430px;
     left: 320px;
     margin: 0px;
     padding: 0px;
