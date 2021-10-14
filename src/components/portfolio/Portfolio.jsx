@@ -5,6 +5,8 @@ import AdminPage from '../../assets/images/AdminPage.png'
 import UserPage from '../../assets/images/UserPage.png'
 import UI from '../../assets/images/MainBackground.png'
 import PortfolioModal from './PortfolioModal/PortfolioModal';
+import { motion } from "framer-motion"
+
 function Portfolio(){
     const ModalListArr = [{
         name : "userPage",
