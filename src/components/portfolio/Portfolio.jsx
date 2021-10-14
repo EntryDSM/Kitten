@@ -11,7 +11,7 @@ function Portfolio(){
         img:UserPage,
         title : '입학전형 시스템',
         summary:'학생용 원서제출 페이지 개발',
-        projectInfo :'원서제출을 위한 개인정보 기입하고 자동으로 성적을 산출하여 원서를 발급 • 출력할 수 있는 메인 페이지입니다.',
+        projectInfo :'원서제출을 위한 개인정보  하고 자동으로 성적을 산출하여 원서를 발급 • 출력할 수 있는 메인 페이지입니다.',
         developTeam : '입학전형시스템 메인플랫폼개발팀'
     },
     {

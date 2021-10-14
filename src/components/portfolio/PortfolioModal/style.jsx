@@ -13,7 +13,7 @@ export const ModalWrapper = styled.section`
     max-width: 100vw;
     max-height: 100vh;
 `
-export const ModalClose = styled.img`
+export const ModalClose = styled.div`
     width: 70px;
     height: 70px;
     position: absolute;

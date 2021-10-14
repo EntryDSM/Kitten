@@ -4,8 +4,6 @@ export const Wrapper = styled.section`
     width: 100%;
     height: 860px;
     background-image: url(${props=>props.img});
-    background-repeat: no-repeat;
-    background-size: cover;
 `
 export const Content = styled.section`
     width: 1278px;
