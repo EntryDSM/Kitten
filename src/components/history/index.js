@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { S } from "./style";
-import Rarrow from "../assets/images/HistoryArrowR.png";
-import Larrow from "../assets/images/HistoryArrowL.png";
-import HImg1 from "../assets/images/HistoryImg1.png";
-import HImg2 from "../assets/images/HistoryImg2.png";
-import HImg3 from "../assets/images/HistoryImg3.png";
-import HImg4 from "../assets/images/HistoryImg4.png";
-import HImg5 from "../assets/images/HistoryImg5.png";
-import HImg6 from "../assets/images/HistoryImg6.png";
-import HistoryBack from "../assets/images/HistoryBack.png";
+import Rarrow from "../../assets/images/HistoryArrowR.png";
+import Larrow from "../../assets/images/HistoryArrowL.png";
+import HImg1 from "../../assets/images/HistoryImg1.png";
+import HImg2 from "../../assets/images/HistoryImg2.png";
+import HImg3 from "../../assets/images/HistoryImg3.png";
+import HImg4 from "../../assets/images/HistoryImg4.png";
+import HImg5 from "../../assets/images/HistoryImg5.png";
+import HImg6 from "../../assets/images/HistoryImg6.png";
+import HistoryBack from "../../assets/images/HistoryBack.png";
 
 const Himgs = {
   0: HImg1,
@@ -57,8 +57,6 @@ function History() {
     }
   };
 
-  
-
   const lstyle = {
     left: "0px",
   };
@@ -99,7 +97,9 @@ function History() {
           <S.Page>{i + 1}장</S.Page>
 
           <img
-          onDragStart={() => {return false}}
+            onDragStart={() => {
+              return false;
+            }}
             className="img"
             src={Himgs[i]}
             alt={"asdf"}
@@ -118,7 +118,11 @@ function History() {
       <S.Wrapper img={HistoryBack}>
         <S.Title>HISTORY</S.Title>
         <S.Line2 />
-        <S.Desc>약 5년 간 서비스를 제공해온 노하우를 바탕으로<br />EntryDSM은 지속적인 성장을 이뤄내고 있습니다.</S.Desc>
+        <S.Desc>
+          약 5년 간 서비스를 제공해온 노하우를 바탕으로
+          <br />
+          EntryDSM은 지속적인 성장을 이뤄내고 있습니다.
+        </S.Desc>
         <S.SlideWrapper>
           {pages}
           <img
