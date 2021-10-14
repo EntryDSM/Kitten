@@ -9,10 +9,10 @@ export const Wrapper = styled.div`
     background-repeat : no-repeat;
     background-size : cover;
 `
-export const Introduce = styled.div`
-    padding: 228px 0 0 320px;
-`
 export const SchoolCircleName = styled.p`
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 228px;
     font-family: "bm-dohyeon";
     font-weight: 400;
     font-size: 45px;
@@ -27,17 +27,22 @@ export const SchoolCircleName = styled.p`
         font-size: 60px;
     }
 `
-export const SubmitButton = styled.button`
-    margin-left: 326px;
-    width: 250px;
-    height: 83.37px;
-    border-radius: 10px;
-    background: linear-gradient(94.67deg, #EF6268 0%, #FF8888 100%);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
-    font-size: 30px;
-    line-height: 80px;
-    font-family: "bm-hanna-pro-otf";
-    font-style: normal;
-    font-weight: normal;
-    color: #ffffff;
+export const SubmitButtonDiv = styled.div`
+    width: 1280px;
+    margin: 0 auto;
+    background: transparent;
+    >button {
+        margin-left: 6;
+        width: 250px;
+        height: 83.37px;
+        border-radius: 10px;
+        background: linear-gradient(94.67deg, #EF6268 0%, #FF8888 100%);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+        font-size: 30px;
+        line-height: 80px;
+        font-family: "bm-hanna-pro-otf";
+        font-style: normal;
+        font-weight: normal;
+        color: #ffffff;
+    }
 `
