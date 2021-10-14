@@ -36,15 +36,20 @@ export const SubmitButtonDiv = styled.div`
     width: 1280px;
     margin: 0 auto;
     background: transparent;
-    >button {
-        margin-left: 6;
+    >a {
+        margin-left: 6px;
+        margin-top: 15px;
         width: 250px;
-        height: 83.37px;
+        height: 87.37px;
         border-radius: 10px;
         background: linear-gradient(94.67deg, #EF6268 0%, #FF8888 100%);
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
-        font-size: 30px;
         line-height: 80px;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
         font-family: "bm-hanna-pro-otf";
         font-style: normal;
         font-weight: normal;
