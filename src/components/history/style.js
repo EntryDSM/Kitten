@@ -1,42 +1,52 @@
 import styled from "styled-components";
 
 export const S = {
-  Wrapper: styled.div`
-    position: relative;
-    margin: 0px;
-    padding: 0px;
+  TotalWrapper: styled.div`
+  margin:0px;
+  padding:0px;
+    width: 100%;
+    height: 860px;
     background-image: url(${(props) => props.img});
     background-size: 100% 860px;
-    width: 100%;
+    
+  `,
+
+  Wrapper: styled.div`
+    margin: 0 auto;
+    padding: 0px;
+    width: 1520px;
     height: 860px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+
   `,
 
   SlideWrapper: styled.div`
     margin: 0px;
     padding: 0px;
-    position: absolute;
-    right: 305px;
-    top: 134px;
+    margin-right:100px;
     width: 800px;
     height: 545px;
     #Rarrow {
       width: 55px;
       position: absolute;
       z-index: 3;
-      top: 224px;
-      right: 75px;
+      margin-left:670px;
+      margin-top:230px;
     }
     #Larrow {
       width: 55px;
       position: absolute;
       z-index: 3;
-      top: 224px;
-      left: 75px;
+      margin-left:70px;
+      margin-top:230px;
     }
   `,
 
@@ -118,9 +128,12 @@ export const S = {
     left: 29px;
   `,
 
+  LWrapper: styled.div`    
+   margin-left:100px;
+  `,
+
   Title: styled.p`
-    left: 320px;
-    position: absolute;
+    height:70px;
     margin: 0px;
     padding: 0px;
     top: 340px;
@@ -129,19 +142,15 @@ export const S = {
   `,
 
   Line2: styled.div`
-    top: 410px;
-    left: 320px;
-    position: absolute;
+    
     border-bottom: 4px solid #ef6268;
     width: 340px;
   `,
 
   Desc: styled.p`
-    top: 430px;
-    left: 320px;
+
     margin: 0px;
     padding: 0px;
-    position: absolute;
     font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: normal;

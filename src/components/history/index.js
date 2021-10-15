@@ -58,7 +58,7 @@ function History() {
   };
 
   const lstyle = {
-    left: "0px",
+    marginLeft:'0px'
   };
 
   const curstyle = {
@@ -94,7 +94,7 @@ function History() {
         >
           <S.Year>{2016 + i}</S.Year>
           <S.Line1 />
-          <S.Page>{i + 1}장</S.Page>
+          <S.Page className="hanna">{i + 1}장</S.Page>
 
           <img
             onDragStart={() => {
@@ -113,16 +113,18 @@ function History() {
   let pages = [];
 
   return (
-    <>
+    <S.TotalWrapper img={HistoryBack}>
       {renderingContent(pages)}
-      <S.Wrapper img={HistoryBack}>
-        <S.Title>HISTORY</S.Title>
-        <S.Line2 />
-        <S.Desc>
-          약 5년 간 서비스를 제공해온 노하우를 바탕으로
-          <br />
-          EntryDSM은 지속적인 성장을 이뤄내고 있습니다.
-        </S.Desc>
+      <S.Wrapper>
+        <S.LWrapper>
+          <S.Title>HISTORY</S.Title>
+          <S.Line2 />
+          <S.Desc>
+            약 5년 간 서비스를 제공해온 노하우를 바탕으로
+            <br />
+            EntryDSM은 지속적인 성장을 이뤄내고 있습니다.
+          </S.Desc>
+        </S.LWrapper>
         <S.SlideWrapper>
           {pages}
           <img
@@ -139,7 +141,7 @@ function History() {
           ></img>
         </S.SlideWrapper>
       </S.Wrapper>
-    </>
+    </S.TotalWrapper>
   );
 }
 
