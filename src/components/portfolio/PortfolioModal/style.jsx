@@ -12,6 +12,7 @@ export const ModalWrapper = styled.section`
     transform: translate(-50%,-50%);
     max-width: 100vw;
     max-height: 100vh;
+    z-index: 99;
 `
 export const ModalClose = styled.div`
     width: 70px;

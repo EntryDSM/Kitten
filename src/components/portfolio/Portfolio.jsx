@@ -51,12 +51,14 @@ function Portfolio(){
             </S.Introduce>
             <S.ModalsBox>
                 {ModalListArr.map((li)=>
-                    <S.EachModalBox onClick={()=>onClickOpenModal(li)}>
-                        <img src={li.img} alt="" />
-                        <section>
-                            <p>{li.title}</p>
-                            <span>{li.summary}</span>
-                        </section>
+                    <S.EachModalBox>
+                        <div onClick={()=>onClickOpenModal(li)}>
+                            <img src={li.img} alt="" />
+                        </div>
+                            <section>
+                                <p>{li.title}</p>
+                                <span>{li.summary}</span>
+                            </section>
                     </S.EachModalBox>
                 )}
             </S.ModalsBox>

@@ -51,9 +51,12 @@ export const EachModalBox = styled.div`
     :hover{
         cursor: pointer;
     }
-    >img{
+    > div >img{
         width: 100%;
         height: 182px;
+        &:hover{
+            opacity: 0.4;
+        }
     }
     >section{
         display: flex;
