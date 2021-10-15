@@ -51,12 +51,22 @@ export const EachModalBox = styled.div`
     :hover{
         cursor: pointer;
     }
-    > div >img{
+    > div > div {
+        position: relative;
         width: 100%;
         height: 182px;
-        &:hover{
-            opacity: 0.4;
+        :hover{
+            >section{
+                display: block;
+            }
         }
+        >img{
+            width: 100%;
+            height: 100%;
+            &:hover{
+                opacity: 0.4;
+        }
+    }
     }
     >section{
         display: flex;
@@ -76,4 +86,17 @@ export const EachModalBox = styled.div`
             margin-bottom: 36.86px;
         }
     }
+`
+export const Magnifier = styled.section`
+    background-image: url(${props=>props.backImg});
+    background-repeat : no-repeat;
+    background-size : cover;
+    position: absolute;
+    width: 60px;
+    height: 62.64px;
+    z-index:98;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
 `

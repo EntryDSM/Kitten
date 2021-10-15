@@ -5,6 +5,8 @@ import AdminPage from '../../assets/images/AdminPage.png'
 import UserPage from '../../assets/images/UserPage.png'
 import UI from '../../assets/images/MainBackground.png'
 import PortfolioModal from './PortfolioModal/PortfolioModal';
+import Magnifier from '../../assets/images/Magnifier.png'
+
 function Portfolio(){
     const ModalListArr = [{
         name : "userPage",
@@ -53,7 +55,10 @@ function Portfolio(){
                 {ModalListArr.map((li)=>
                     <S.EachModalBox>
                         <div onClick={()=>onClickOpenModal(li)}>
-                            <img src={li.img} alt="" />
+                            <div>
+                                <S.Magnifier backImg={Magnifier}/>
+                                <img src={li.img} alt="" />
+                            </div>
                         </div>
                             <section>
                                 <p>{li.title}</p>
