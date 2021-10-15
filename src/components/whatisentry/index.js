@@ -100,7 +100,7 @@ const Topdiv = styled.span`
     width: 1240px;
     margin: 0 auto;
     margin-bottom: 104px;
-    margin-top: 100px;
+    padding-top: 130px;
 `;
 const Contnetspan = styled.span`
     margin-left:100px;
