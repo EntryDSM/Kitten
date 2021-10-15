@@ -30,11 +30,11 @@ const MainFooter = styled.footer`
     font-weight: 400;
     white-space: pre-wrap;
     display: flex;
+    justify-content: center;
 `;
 const Contentsdiv =styled.div`
     line-height :34px;
     padding-top: 26px;
-    padding-left: 320px;
 `;
 const Contentsa = styled.a`
     font-size:18px;

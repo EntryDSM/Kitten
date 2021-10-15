@@ -18,7 +18,7 @@ function WhatisEntry() {
     const [eye, Hovereye] = useState(false);
     const [moniter, Hovermoniter] = useState(false);
     return (
-        <>
+        <div id="entryDSM">
             <Topdiv>
                 <img width="301px" src={WhatEntrylogo} />
                 <Contnetspan>
@@ -41,6 +41,7 @@ function WhatisEntry() {
                     </Sort1>
                 </Rootdiv>
                 <Rootdiv
+                    margin = "50"
                     onMouseOver={() => Hovereye(true)}
                     onMouseOut={() => Hovereye(false)}
                 >
@@ -56,6 +57,7 @@ function WhatisEntry() {
                     </Sort1>
                 </Rootdiv>
                 <Rootdiv
+                    margin = "50"
                     onMouseOver={() => Hovermoniter(true)}
                     onMouseOut={() => Hovermoniter(false)}
                 >
@@ -70,7 +72,7 @@ function WhatisEntry() {
                     </Sort1>
                 </Rootdiv>
             </Maprootdiv>
-        </>
+        </div>
     );
 }
 const Sort1 = styled.div`
@@ -80,8 +82,10 @@ const Sort1 = styled.div`
 `;
 const Maprootdiv = styled.div`
     display:flex;
-    margin-left:292px;
     margin-top:110px;
+    width: 1240px;
+    margin: 0 auto;
+    /* justify-content : center; */
 `;
 const Contentsa = styled.a`
     white-space: pre-wrap;
@@ -92,7 +96,10 @@ const Contentsa = styled.a`
 `;
 const Topdiv = styled.span`
     display:flex;
-    margin-left: 348px;
+    /* justify-content : center; */
+    width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 104px;
     margin-top: 100px;
 `;
 const Contnetspan = styled.span`
@@ -113,7 +120,7 @@ const Rootdiv = styled.div`
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     background: #FFFFFF;
     border-radius: 5px;
-    margin-left:50px;
+    margin-left: ${props=>props.margin || 0}px;
     margin-bottom:132px;
 `
 const Rootcontent = styled.a`

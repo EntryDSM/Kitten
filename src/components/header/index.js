@@ -17,10 +17,10 @@ function Header() {
       <MainHeader height={height}>
         <Entrylogo width="322px" height="95.12px" src={Entryheader} />
           <Navbar>
-            <A>RECEIPT</A>
-            <A>ENTRY&nbsp;DSM</A>
-            <A>PORTFOLIO</A>
-            <A>HISTORY</A>
+            <A href="#main">RECEIPT</A>
+            <A href="#entryDSM">ENTRY&nbsp;DSM</A>
+            <A href="#portfolio">PORTFOLIO</A>
+            <A href="#history">HISTORY</A>
             <A>TEAM</A>
             <A>MEMBER Q&amp;A</A>
           </Navbar>
@@ -38,6 +38,7 @@ const MainHeader = styled.header`
   font-family: Arial;
   font-weight: 400;
   position: fixed;
+  z-index: 98;
   top: 0;
   left: 0;
   right: 0;
@@ -54,6 +55,8 @@ const Entrylogo = styled.img`
 
 const A = styled.a`
   font-size: 20px;
+  color: black;
+  text-decoration: none;
 `;
 
 export default Header;

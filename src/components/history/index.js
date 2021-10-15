@@ -113,7 +113,7 @@ function History() {
   let pages = [];
 
   return (
-    <S.TotalWrapper img={HistoryBack}>
+    <S.TotalWrapper id="history" img={HistoryBack}>
       {renderingContent(pages)}
       <S.Wrapper>
         <S.LWrapper>

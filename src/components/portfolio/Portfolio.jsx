@@ -42,7 +42,7 @@ function Portfolio(){
         console.log(selectPortfolioInfo,",",openModal);
     },[openModal,selectPortfolioInfo]);
   return(
-      <S.Wrapper img={ProtfolioBack}>
+      <S.Wrapper id="portfolio" img={ProtfolioBack}>
           {openModal ? <PortfolioModal selectPortfolioInfo={selectPortfolioInfo} setOpenModal={setOpenModal}/> : ''}
           <S.Content>
             <S.Head>PORTFOLIO</S.Head>

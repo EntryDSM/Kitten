@@ -4,7 +4,7 @@ import backIMG from '../../assets/images/MainBackground.png'
 import '@kfonts/bm-dohyeon';
 function Main(){
   return(
-      <S.Wrapper img={backIMG}>
+      <S.Wrapper id="main" img={backIMG}>
         <S.SchoolCircleName>
           <span>대덕소프트웨어</span><br/>
           <span>마이스터고등학교</span><br/>
