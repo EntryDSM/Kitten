@@ -14,7 +14,7 @@ export const S = {
   Wrapper: styled.div`
     margin: 0 auto;
     padding: 0px;
-    width: 1520px;
+    width: 1280px;
     height: 860px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -31,7 +31,6 @@ export const S = {
   SlideWrapper: styled.div`
     margin: 0px;
     padding: 0px;
-    margin-right:100px;
     width: 800px;
     height: 545px;
     #Rarrow {
@@ -129,7 +128,6 @@ export const S = {
   `,
 
   LWrapper: styled.div`    
-   margin-left:100px;
   `,
 
   Title: styled.p`

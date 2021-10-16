@@ -85,6 +85,7 @@ export const EachModalBox = styled.div`
         >span{
             margin-top: 16px;
             margin-bottom: 36.86px;
+            font-family: 'Noto Sans KR', sans-serif;
         }
     }
 `
