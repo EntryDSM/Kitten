@@ -7,19 +7,21 @@ import WhatIsEntry from './components/whatisentry/index'
 import History from './components/history/index'
 import TeamList from './components/teamList';
 import QNA from './components/qna';
+
 function App() {
   return (
     <div>
       <GlobalStyle/>
-      <Header></Header>
+
+      <Footer/>
+      <Header/>
       <Main/>
-      <WhatIsEntry></WhatIsEntry>
+      <WhatIsEntry/>
       <Portfolio/>
       <History/>
-      <TeamList></TeamList>
-      <QNA></QNA>
+      <TeamList/>
+      <QNA/>
       <Footer/>
-    
     </div>
   );
 }
