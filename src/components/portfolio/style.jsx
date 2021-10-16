@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.section`
     width: 100%;
-    height: 860px;
+    height: 970px;
     background-image: url(${props=>props.img});
-    padding-top: 20px;
+    padding-top: 80px;
 `
 export const Content = styled.section`
     width: 1278px;
     height: 100%;
+    margin-top: 80px;
     margin: 0 auto;
 `
 export const Head = styled.h1`
