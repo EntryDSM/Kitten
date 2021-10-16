@@ -65,7 +65,6 @@ export const AContentWrapper = styled.div`
     
 `
 export const AContent = styled.div`
-
     display: flex;
     font-size: 25px;
     margin-bottom: 60px;
@@ -75,7 +74,8 @@ export const AContent = styled.div`
         max-width: 700px;
         font-size: 25px;
         word-wrap: break-word;
+        
         font-family: "bm-dohyeon";
-        margin: 10px 0 ;
+        margin: 5px 0 ;
     }
 `
