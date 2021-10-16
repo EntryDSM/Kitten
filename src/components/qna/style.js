@@ -24,7 +24,7 @@ export const QNATitle = styled.div`
 `
 
 export const QNABox = styled.div`
-    width: 880px;
+    width: 1000px;
     border-top: 2px solid #626262;
     display: flex;
     flex-direction: column;
