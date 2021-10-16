@@ -23,7 +23,7 @@ export const ProfileImageB = styled.a`
     margin: 0 15px;
     z-index:3;
     &:hover{
-        & div{
+        & img{
             filter: opacity(25%);
         }
         &::after{
@@ -36,9 +36,7 @@ export const ProfileImageB = styled.a`
 
 
 export const ProfileImage = styled.img`
-
     z-index:0;
-    
     background-position: center;
     background-size: contain;
     width: 60px;
