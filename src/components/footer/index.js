@@ -12,9 +12,9 @@ function Footer(){
                 <Contentsa>{contents}</Contentsa>
             </Contentsdiv>
             <Introduce>
-                <Introducea>Entry 소개</Introducea><br />
-                <Introducea>시스템 소개</Introducea><br />
-                <Introducea>개발자 소개</Introducea><br />
+                <Introducea href="/">Entry 소개</Introducea><br />
+                <Introducea href="#portfolio">시스템 소개</Introducea><br />
+                <Introducea href="#page-team">개발자 소개</Introducea><br />
                 <a href="http://facebook.com/entrydsm"><Image width="40px" src={Facebook} /></a>
                 <a  href="http://github.com/entrydsm"><Image width="40px" src={Github}/></a>
             </Introduce>
@@ -51,6 +51,8 @@ const Introducea = styled.a`
     font-size: 20px;
     line-height: 45px;
     margin-left: 17px;
+    color: #ffffff;
+    text-decoration: none;
 `;
 const Image = styled.img`
     margin: 15px;

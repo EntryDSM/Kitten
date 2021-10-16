@@ -107,7 +107,7 @@ function TeamList() {
         }
     ]
   return (
-    <s.TeamList id="team">
+    <s.TeamList id="page-team">
       <s.TeamListWrapper>
         <s.TeamBox>
           <s.TeamText>TEAM</s.TeamText>

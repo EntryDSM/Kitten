@@ -21,7 +21,7 @@ function Header() {
             <A href="#entryDSM">ENTRY&nbsp;DSM</A>
             <A href="#portfolio">PORTFOLIO</A>
             <A href="#history">HISTORY</A>
-            <A href="#team">TEAM</A>
+            <A href="#page-team">TEAM</A>
             <A href="#qna">MEMBER Q&amp;A</A>
           </Navbar>
     </MainHeader>
