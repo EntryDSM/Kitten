@@ -1,7 +1,6 @@
 import * as s from "./style"
 
 function QnaModal ({setQnaModal,qnaList}){
-    console.log(setQnaModal,qnaList)
     const ansMan = ["이서준","김혜준","전규현","이승윤"]
     return(
        
@@ -24,7 +23,7 @@ function QnaModal ({setQnaModal,qnaList}){
                 {qnaList.Acontent.map((props,index )=>(
                     <s.AContent key={index}>
                         <p>{ansMan[index]}:</p>
-                        <p>{props}</p>
+                        <p style={{marginLeft:10}}>{props}</p>
                     </s.AContent>
                 ))}
                 
