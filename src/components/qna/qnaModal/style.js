@@ -7,7 +7,9 @@ export const ModalWrapper = styled.div`
     left: 50%;
     z-index:100;
     transform: translate(-50%,-50%);
-    width: 75%;
+    width: 80%;
+    max-height: 900px;
+    box-sizing: border-box;
     background-color: white;
     border-radius: 30px;
     background-image: url(${ModalBackground});
@@ -17,9 +19,9 @@ export const ModalWrapper = styled.div`
     box-shadow: 0px 7px 10px 0px #00000033;
     max-height: 95%;
     overflow: auto;
-    &::-webkit-scrollbar{
+    /* &::-webkit-scrollbar{
         display: none;
-    }
+    } */
     
     font-family: "bm-dohyeon";
 `

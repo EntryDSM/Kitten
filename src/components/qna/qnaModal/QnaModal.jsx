@@ -17,7 +17,7 @@ function QnaModal ({setQnaModal,qnaList}){
                     })
                 }}></s.XContent>
         </s.QContentWrapper>
-        <div style={{display:"flex"}}>
+        <div style={{display:"flex",height:'660px'}}>
             <s.ATitle>A{qnaList.qId}.</s.ATitle>
             <s.AContentWrapper>
                 {qnaList.Acontent.map((props,index )=>(
