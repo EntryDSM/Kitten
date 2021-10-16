@@ -5,8 +5,8 @@ export const TeamList = styled.div`
 background-image: url(${TeamListBackgroundImage});
 background-size: cover;
 padding-bottom: 40px;
-
 font-family: "bm-dohyeon";
+padding-top: 50px;
 `
 
 export const TeamListWrapper = styled.div`

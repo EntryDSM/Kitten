@@ -64,7 +64,7 @@ function QNA (){
     return (
         <>
         {qnaModal.isModal?<QnaModal setQnaModal={setQnaModal} qnaList={qnaList[qnaModal.aId-1]}></QnaModal>:<></>}
-        <s.QNAWrapper>
+        <s.QNAWrapper id="memberQna">
             <s.QNATitle>MEMBER Q&A</s.QNATitle>
             <s.QNABox>
                 {qnaList.map(props =>(

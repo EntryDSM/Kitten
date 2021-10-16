@@ -14,7 +14,7 @@ export const QNATitle = styled.div`
     border-bottom: 4px solid #EF6268;
     font-size: 55px;
     font-weight: 400;
-    margin-top: 50px;
+    margin-top: 80px;
     padding: 0 10px;
     margin-bottom: 80px;
     padding-bottom: 5px;
