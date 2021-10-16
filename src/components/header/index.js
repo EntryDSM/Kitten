@@ -22,7 +22,7 @@ function Header() {
             <A href="#portfolio">PORTFOLIO</A>
             <A href="#history">HISTORY</A>
             <A href="#team">TEAM</A>
-            <A href="#memberQna">MEMBER Q&amp;A</A>
+            <A href="#qna">MEMBER Q&amp;A</A>
           </Navbar>
     </MainHeader>
   );
