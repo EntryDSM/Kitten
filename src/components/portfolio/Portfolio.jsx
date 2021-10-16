@@ -26,7 +26,7 @@ function Portfolio(){
         title : '입학전형 시스템',
         summary:'전형 관리자 페이지 개발',
         projectInfo : "지원자들의 원서 제출 현황을 관리하고, 쾌적한 시스템 운영을 제공하는 관리자 대시보드입니다.",
-        developTeam : '입학전형시스템 메인플랫폼개발팀',
+        developTeam : '입학전형시스템 어드민플렛폼개발팀',
         frontDeveloper : '전규현',
         backDeveloper : '이승윤'
     },
@@ -50,33 +50,35 @@ function Portfolio(){
         console.log(selectPortfolioInfo,",",openModal);
     },[openModal,selectPortfolioInfo]);
   return(
-      <S.Wrapper id="portfolio" img={ProtfolioBack}>
-          {openModal ? <PortfolioModal selectPortfolioInfo={selectPortfolioInfo} setOpenModal={setOpenModal}/>: ''}
-          <S.Content>
-            <S.Head>PORTFOLIO</S.Head>
-            <S.Line/>
-            <S.Introduce>
-                EntryDSM은 입학전형시스템을 비롯한<br/>
-                여러 시스템의 개발유지보수를 진행하고 있습니다.
-            </S.Introduce>
-            <S.ModalsBox>
-                {ModalListArr.map((li)=>
-                    <S.EachModalBox>
-                        <div onClick={()=>onClickOpenModal(li)}>
-                            <div>
-                                <S.Magnifier backImg={Magnifier}/>
-                                <img src={li.img} alt="" />
+        <div>
+        <S.Wrapper id="portfolio" img={ProtfolioBack}>
+            {openModal ? <PortfolioModal selectPortfolioInfo={selectPortfolioInfo} setOpenModal={setOpenModal}/>: ''}
+            <S.Content>
+                <S.Head>PORTFOLIO</S.Head>
+                <S.Line/>
+                <S.Introduce>
+                    EntryDSM은 입학전형시스템을 비롯한<br/>
+                    여러 시스템의 개발유지보수를 진행하고 있습니다.
+                </S.Introduce>
+                <S.ModalsBox>
+                    {ModalListArr.map((li)=>
+                        <S.EachModalBox>
+                            <div onClick={()=>onClickOpenModal(li)}>
+                                <div>
+                                    <S.Magnifier backImg={Magnifier}/>
+                                    <img src={li.img} alt="" />
+                                </div>
                             </div>
-                        </div>
-                            <section>
-                                <p>{li.title}</p>
-                                <span>{li.summary}</span>
-                            </section>
-                    </S.EachModalBox>
-                )}
-            </S.ModalsBox>
-          </S.Content>
-      </S.Wrapper>
+                                <section>
+                                    <p>{li.title}</p>
+                                    <span>{li.summary}</span>
+                                </section>
+                        </S.EachModalBox>
+                    )}
+                </S.ModalsBox>
+            </S.Content>
+        </S.Wrapper>
+        </div>
   );
 }
 export default Portfolio;

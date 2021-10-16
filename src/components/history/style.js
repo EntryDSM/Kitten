@@ -5,10 +5,11 @@ export const S = {
   margin:0px;
   padding:0px;
     width: 100%;
-    height: 860px;
+    height: 970px;
     background-image: url(${(props) => props.img});
-    background-size: 100% 860px;
-    
+    background-repeat : no-repeat;
+    background-size : cover;
+    padding-top: 80px;
   `,
 
   Wrapper: styled.div`

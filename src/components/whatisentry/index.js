@@ -18,7 +18,7 @@ function WhatisEntry() {
     const [eye, Hovereye] = useState(false);
     const [moniter, Hovermoniter] = useState(false);
     return (
-        <div id="entryDSM">
+        <div id="entryDSM" style={{paddingTop:'80px'}}>
             <Topdiv>
                 <img width="301px" src={WhatEntrylogo} />
                 <Contnetspan>

@@ -2,11 +2,12 @@ import styled from 'styled-components';
 import Surch from "../../assets/images/Surch.png"
 export const QNAWrapper = styled.div`
     width: 1140px;
+    height: 970px;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 80px;
     font-family: "bm-dohyeon";
 `
 
