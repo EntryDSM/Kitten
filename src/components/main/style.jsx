@@ -34,7 +34,9 @@ export const SchoolCircleName = styled.p`
 `
 export const SubmitButtonDiv = styled.div`
     width: 1280px;
-    margin: 0 auto;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
     background: transparent;
     >a {
         margin-left: 6px;
