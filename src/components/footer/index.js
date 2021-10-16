@@ -15,8 +15,8 @@ function Footer(){
                 <Introducea>Entry 소개</Introducea><br />
                 <Introducea>시스템 소개</Introducea><br />
                 <Introducea>개발자 소개</Introducea><br />
-                <Image width="40px" src={Facebook}/>
-                <Image width="40px" src={Github}/>
+                <a href="http://facebook.com/entrydsm"><Image width="40px" src={Facebook} /></a>
+                <a  href="http://github.com/entrydsm"><Image width="40px" src={Github}/></a>
             </Introduce>
     </MainFooter>
     );
