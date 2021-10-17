@@ -115,6 +115,7 @@ const Rootdiv = styled.div`
         background-color : #FF9B9F;
         color : #ffffff;
     } 
+    cursor: pointer;
     width:380px;
     height:380px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);

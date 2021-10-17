@@ -2,6 +2,7 @@ import React from 'react';
 import * as S from './style';
 import backIMG from '../../assets/images/MainBackground.png'
 import '@kfonts/bm-dohyeon';
+
 function Main(){
   return(
     <div id="main" style={{paddingTop:'120px'}}>
@@ -17,6 +18,7 @@ function Main(){
         </S.SubmitButtonDiv>
       </S.Wrapper>
     </div>
+
   );
 }
 export default Main;

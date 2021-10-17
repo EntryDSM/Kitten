@@ -1,6 +1,7 @@
-import {GlobalStyle} from './style/globalStyle';
+import { GlobalStyle } from './style/globalStyle';
 import Main from "./components/main/Main";
 import Portfolio from './components/portfolio/Portfolio';
+
 import Header from './components/header/index'
 import Footer from './components/footer/index'
 import WhatIsEntry from './components/whatisentry/index'
