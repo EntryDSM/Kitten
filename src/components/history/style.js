@@ -30,6 +30,9 @@ export const S = {
       z-index: 3;
       top: 224px;
       right: 75px;
+      :hover{
+        cursor:pointer;
+      }
     }
     #Larrow {
       width: 55px;
@@ -37,6 +40,9 @@ export const S = {
       z-index: 3;
       top: 224px;
       left: 75px;
+      :hover{
+        cursor:pointer;
+      }
     }
   `,
 

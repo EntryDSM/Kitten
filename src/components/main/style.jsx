@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     width: 100%;
     height: 850px;
     margin-top: 120px;
-    background-image: url(${props=>props.img});
+    background-image: url(${props => props.img});
     background-repeat : no-repeat;
     background-size : cover;
 `
@@ -16,7 +16,7 @@ export const SchoolCircleName = styled.p`
     font-family: "bm-dohyeon";
     font-weight: 400;
     font-size: 45px;
-    color: ${props=>props.color || '#ffffff'};
+    color: ${props => props.color || '#ffffff'};
     letter-spacing: 0.14em;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
     line-height: 60px;
@@ -44,7 +44,7 @@ export const SubmitButtonDiv = styled.div`
         border-radius: 10px;
         background: linear-gradient(94.67deg, #EF6268 0%, #FF8888 100%);
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
-        line-height: 80px;
+        line-height: 30px;
         display: flex;
         justify-content: center;
         text-decoration: none;
@@ -53,6 +53,7 @@ export const SubmitButtonDiv = styled.div`
         font-family: "bm-hanna-pro-otf";
         font-style: normal;
         font-weight: normal;
+        align-items:center;
         color: #ffffff;
     }
 `
