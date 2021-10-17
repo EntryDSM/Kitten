@@ -12,11 +12,11 @@ function Footer(){
                 <Contentsa>{contents}</Contentsa>
             </Contentsdiv>
             <Introduce>
-                <Introducea>Entry 소개</Introducea><br />
-                <Introducea>시스템 소개</Introducea><br />
-                <Introducea>개발자 소개</Introducea><br />
-                <Image width="40px" src={Facebook}/>
-                <Image width="40px" src={Github}/>
+                <Introducea href="/">Entry 소개</Introducea><br />
+                <Introducea href="#portfolio">시스템 소개</Introducea><br />
+                <Introducea href="#page-team">개발자 소개</Introducea><br />
+                <a href="http://facebook.com/entrydsm"><Image width="40px" src={Facebook} /></a>
+                <a  href="http://github.com/entrydsm"><Image width="40px" src={Github}/></a>
             </Introduce>
     </MainFooter>
     );
@@ -30,11 +30,11 @@ const MainFooter = styled.footer`
     font-weight: 400;
     white-space: pre-wrap;
     display: flex;
+    justify-content: center;
 `;
 const Contentsdiv =styled.div`
     line-height :34px;
     padding-top: 26px;
-    padding-left: 320px;
 `;
 const Contentsa = styled.div`
     font-size:18px;
@@ -51,6 +51,8 @@ const Introducea = styled.a`
     font-size: 20px;
     line-height: 45px;
     margin-left: 17px;
+    color: #ffffff;
+    text-decoration: none;
 `;
 const Image = styled.img`
     margin: 15px;

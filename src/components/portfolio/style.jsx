@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.section`
     width: 100%;
-    height: 860px;
+    height: 970px;
     background-image: url(${props=>props.img});
+    padding-top: 80px;
 `
 export const Content = styled.section`
     width: 1278px;
     height: 100%;
+    margin-top: 80px;
     margin: 0 auto;
 `
 export const Head = styled.h1`
@@ -51,12 +53,22 @@ export const EachModalBox = styled.div`
     :hover{
         cursor: pointer;
     }
-    > div >img{
+    > div > div {
+        position: relative;
         width: 100%;
         height: 182px;
-        &:hover{
-            opacity: 0.4;
+        :hover{
+            >section{
+                display: block;
+            }
         }
+        >img{
+            width: 100%;
+            height: 100%;
+            &:hover{
+                opacity: 0.4;
+        }
+    }
     }
     >section{
         display: flex;
@@ -74,6 +86,20 @@ export const EachModalBox = styled.div`
         >span{
             margin-top: 16px;
             margin-bottom: 36.86px;
+            font-family: 'Noto Sans KR', sans-serif;
         }
     }
+`
+export const Magnifier = styled.section`
+    background-image: url(${props=>props.backImg});
+    background-repeat : no-repeat;
+    background-size : cover;
+    position: absolute;
+    width: 60px;
+    height: 62.64px;
+    z-index:98;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
 `

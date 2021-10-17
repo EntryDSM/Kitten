@@ -1,48 +1,59 @@
 import styled from "styled-components";
 
 export const S = {
-  Wrapper: styled.div`
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    background-image: url(${(props) => props.img});
-    background-size: 100% 860px;
+  TotalWrapper: styled.div`
+  margin:0px;
+  padding:0px;
     width: 100%;
+    height: 970px;
+    background-image: url(${(props) => props.img});
+    background-repeat : no-repeat;
+    background-size : cover;
+    padding-top: 80px;
+  `,
+
+  Wrapper: styled.div`
+    margin: 0 auto;
+    padding: 0px;
+    width: 1280px;
     height: 860px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+
   `,
 
   SlideWrapper: styled.div`
     margin: 0px;
     padding: 0px;
-    position: absolute;
-    right: 305px;
-    top: 134px;
     width: 800px;
     height: 545px;
     #Rarrow {
       width: 55px;
       position: absolute;
       z-index: 3;
-      top: 224px;
-      right: 75px;
       :hover{
         cursor:pointer;
       }
+      margin-left:670px;
+      margin-top:230px;
     }
     #Larrow {
       width: 55px;
       position: absolute;
       z-index: 3;
-      top: 224px;
-      left: 75px;
+
       :hover{
         cursor:pointer;
       }
+      margin-left:70px;
+      margin-top:230px;
     }
   `,
 
@@ -124,9 +135,11 @@ export const S = {
     left: 29px;
   `,
 
+  LWrapper: styled.div`    
+  `,
+
   Title: styled.p`
-    left: 320px;
-    position: absolute;
+    height:70px;
     margin: 0px;
     padding: 0px;
     top: 340px;
@@ -135,19 +148,15 @@ export const S = {
   `,
 
   Line2: styled.div`
-    top: 410px;
-    left: 320px;
-    position: absolute;
+    
     border-bottom: 4px solid #ef6268;
     width: 340px;
   `,
 
   Desc: styled.p`
-    top: 430px;
-    left: 320px;
+
     margin: 0px;
     padding: 0px;
-    position: absolute;
     font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: normal;

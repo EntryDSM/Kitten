@@ -4,8 +4,10 @@ import '@kfonts/bm-dohyeon';
 export const Wrapper = styled.div`
     width: 100%;
     height: 850px;
-    margin-top: 120px;
-    background-image: url(${props => props.img});
+
+    /* padding-top: 120px; */
+    background-image: url(${props=>props.img});
+
     background-repeat : no-repeat;
     background-size : cover;
 `
@@ -34,7 +36,9 @@ export const SchoolCircleName = styled.p`
 `
 export const SubmitButtonDiv = styled.div`
     width: 1280px;
-    margin: 0 auto;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
     background: transparent;
     >a {
         margin-left: 6px;

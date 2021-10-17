@@ -25,7 +25,7 @@ const comment = {
   2: "현업에서 자주 이용되는 기술 스택을 기반으로 시스템을 구성하여 사용자 UI, 원서 출력 기능 등 다양한 기능들을 안정적 이용과 성능 향상에 주력하여 시스템의 완성도를 높였습니다.",
   3: "V3 시스템의 성능 한계를 극복하기 위해 비동기 프로그래밍을 적용하였고, 실시간 시스템 모니터링 및 배포 파이프라인 구성으로 구성원의 작업 환경을 개선했습니다.",
   4: "오랜 기간 서비스를 개발과 운영해온 경험을 살려 올해도 안정적으로 입학 전형 시스템을 제공합니다.",
-  5: "좀더 간편한 입학전형 시스템을 제공 해드리고 싶어서 새로운 마음으로 메인 컬러와 여러 기능을 개선하였습니다.",
+  5: "좀 더 간편한 입학 전형 시스템을 제공해드리고 싶어서 새로운 마음으로 메인 컬러와 여러 기능을 개선하였습니다.",
 };
 
 function History() {
@@ -58,7 +58,7 @@ function History() {
   };
 
   const lstyle = {
-    left: "0px",
+    marginLeft:'0px'
   };
 
   const curstyle = {
@@ -94,7 +94,7 @@ function History() {
         >
           <S.Year>{2016 + i}</S.Year>
           <S.Line1 />
-          <S.Page>{i + 1}장</S.Page>
+          <S.Page className="hanna">{i + 1}장</S.Page>
 
           <img
             onDragStart={() => {
@@ -113,16 +113,18 @@ function History() {
   let pages = [];
 
   return (
-    <>
+    <S.TotalWrapper id="history" img={HistoryBack}>
       {renderingContent(pages)}
-      <S.Wrapper img={HistoryBack}>
-        <S.Title>HISTORY</S.Title>
-        <S.Line2 />
-        <S.Desc>
-          약 5년 간 서비스를 제공해온 노하우를 바탕으로
-          <br />
-          EntryDSM은 지속적인 성장을 이뤄내고 있습니다.
-        </S.Desc>
+      <S.Wrapper>
+        <S.LWrapper>
+          <S.Title>HISTORY</S.Title>
+          <S.Line2 />
+          <S.Desc>
+            약 5년 간 서비스를 제공해온 노하우를 바탕으로
+            <br />
+            EntryDSM은 지속적인 성장을 이뤄내고 있습니다.
+          </S.Desc>
+        </S.LWrapper>
         <S.SlideWrapper>
           {pages}
           <img
@@ -139,7 +141,7 @@ function History() {
           ></img>
         </S.SlideWrapper>
       </S.Wrapper>
-    </>
+    </S.TotalWrapper>
   );
 }
 
