@@ -117,7 +117,7 @@ function TeamList() {
         </s.TeamBox>
         <s.GBox>
           <s.GNumText>3학년</s.GNumText>
-          <s.GNumItr>존경스러운 Entry의 3학년들 입니다.</s.GNumItr>
+          <s.GNumItr>이제는 없는 Entry의 3학년들 입니다.</s.GNumItr>
           <s.GTeamList>
               {TeamList3.map((props,i)=>(
                   <ProfileBox key={i} image={props.image} name={props.name} subject={props.subject} github={props.github}></ProfileBox>
