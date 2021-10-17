@@ -35,3 +35,5 @@ jobs:
             
       - name : CloudFront Cache invalidation
         run : aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
+        env:
+          CI: false
