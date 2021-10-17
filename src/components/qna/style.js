@@ -36,6 +36,7 @@ export const QWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #626262;
+    cursor: pointer;
 `
 export const QNum = styled.div`
     font-size: 40px;
