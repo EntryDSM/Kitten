@@ -9,7 +9,7 @@ export const ModalWrapper = styled.section`
     border-radius: 20px;
     top: 0px;
     left: 0px;
-    z-index: 99;
+    z-index: 999;
     overflow: scroll;
 `
 export const ModalClose = styled.div`

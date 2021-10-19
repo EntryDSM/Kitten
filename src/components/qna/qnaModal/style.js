@@ -5,7 +5,7 @@ export const ModalWrapper = styled.div`
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index:100;
+    z-index:999;
     transform: translate(-50%,-50%);
     width: 80%;
     max-height: 900px;
