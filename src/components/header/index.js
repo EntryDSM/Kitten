@@ -38,7 +38,7 @@ const MainHeader = styled.header`
   font-family: Arial;
   font-weight: 400;
   position: fixed;
-  z-index: 98;
+  z-index: 999;
   top: 0;
   left: 0;
   right: 0;

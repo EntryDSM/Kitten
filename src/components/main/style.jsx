@@ -48,16 +48,17 @@ export const SubmitButtonDiv = styled.div`
         border-radius: 10px;
         background: linear-gradient(94.67deg, #EF6268 0%, #FF8888 100%);
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
-        line-height: 30px;
+        line-height: 1.875rem;
         display: flex;
         justify-content: center;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: bold;
         font-family: "bm-hanna-pro-otf";
         font-style: normal;
         font-weight: normal;
         align-items:center;
         color: #ffffff;
+        align-items: center;
     }
 `
