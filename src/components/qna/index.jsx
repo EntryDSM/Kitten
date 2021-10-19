@@ -68,17 +68,17 @@ function QNA (){
             <s.QNATitle>MEMBER Q&A</s.QNATitle>
             <s.QNABox>
                 {qnaList.map(props =>(
-                    <s.QWrapper key={props.qId} >
-                    <div style={{display:"flex"}}>
-                        <s.QNum>Q{props.qId}.</s.QNum>
-                        <s.Question>{props.question}</s.Question>
-                    </div>
-                    <s.ASurch onClick={()=>{
+                    <s.QWrapper onClick={()=>{
                         setQnaModal({
                             aId:props.qId,
                             isModal:true
                         })
-                    }}></s.ASurch>
+                    }} key={props.qId} >
+                    <div style={{display:"flex"}}>
+                        <s.QNum>Q{props.qId}.</s.QNum>
+                        <s.Question>{props.question}</s.Question>
+                    </div>
+                    <s.ASurch ></s.ASurch>
                 </s.QWrapper>
                 ))}
             </s.QNABox>

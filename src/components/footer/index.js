@@ -36,7 +36,7 @@ const Contentsdiv =styled.div`
     line-height :34px;
     padding-top: 26px;
 `;
-const Contentsa = styled.a`
+const Contentsa = styled.div`
     font-size:18px;
 `;
 const Entry = styled.a`
@@ -57,4 +57,5 @@ const Introducea = styled.a`
 const Image = styled.img`
     margin: 15px;
 `;
+
 export default Footer;

@@ -54,6 +54,7 @@ export const XContent= styled.div`
     background-image: url(${ModalClose});
     background-position: center;
     background-size: cover;
+    cursor: pointer;
 `
 export const ATitle = styled.div`
     font-size: 30px;

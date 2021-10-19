@@ -38,6 +38,9 @@ export const S = {
       width: 55px;
       position: absolute;
       z-index: 3;
+      :hover{
+        cursor:pointer;
+      }
       margin-left:670px;
       margin-top:230px;
     }
@@ -45,6 +48,10 @@ export const S = {
       width: 55px;
       position: absolute;
       z-index: 3;
+
+      :hover{
+        cursor:pointer;
+      }
       margin-left:70px;
       margin-top:230px;
     }
