@@ -1,61 +1,66 @@
 import React from "react";
-import styled from "styled-components";
-import Facebook from "../../assets/images/facebook.png"
-import Github from "../../assets/images/github.png"
+import { S } from "./style";
 
-function Footer(){
-    const contents = '\n@ 2021 Entry\n\n개인정보 처리방침 ㅣ 이용약관\n(34111) 대전광역시 유성구 가정북로 76(장동 23-9)\n교무실 : 042-866-8822 / Fax : 042-867-9900 행정실 : 042-866-8885 / Fax : 042-863-4308\nEntrepreneur ';
-    return(
-    <MainFooter>
-            <Contentsdiv>
-                <Entry>Entry</Entry>
-                <Contentsa>{contents}</Contentsa>
-            </Contentsdiv>
-            <Introduce>
-                <Introducea href="/">Entry 소개</Introducea><br />
-                <Introducea href="#portfolio">시스템 소개</Introducea><br />
-                <Introducea href="#page-team">개발자 소개</Introducea><br />
-                <a href="http://facebook.com/entrydsm"><Image width="40px" src={Facebook} /></a>
-                <a  href="http://github.com/entrydsm"><Image width="40px" src={Github}/></a>
-            </Introduce>
-    </MainFooter>
-    );
+function Footer() {
+  const contents =
+    "\n@ 2021 Entry\n\n개인정보 처리방침 ㅣ 이용약관\n(34111) 대전광역시 유성구 가정북로 76(장동 23-9)\n교무실 : 042-866-8822 / Fax : 042-867-9900 행정실 : 042-866-8885 / Fax : 042-863-4308\nEntrepreneur ";
+  return (
+    <S.MainFooter>
+      <S.Contentsdiv>
+        <S.Entry>Entry</S.Entry>
+        <S.Contentsa>{contents}</S.Contentsa>
+      </S.Contentsdiv>
+      <S.Introduce>
+        <S.Introducea href="/">Entry 소개</S.Introducea>
+        <br />
+        <S.Introducea href="#portfolio">시스템 소개</S.Introducea>
+        <br />
+        <S.Introducea href="#page-team">개발자 소개</S.Introducea>
+        <br />
+        <a href="http://facebook.com/entrydsm">
+          <svg
+            style={{ margin: "15px" }}
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M30.4687 0C36.25 0 40 3.75 40 9.53127V30.4687C40 36.25 36.25 40 30.4687 40H9.53127C3.75 40 0 36.25 0 30.4687V9.53127C0 3.75 3.75 0 9.53127 0H30.4687Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M20.924 39.8018V24.3089H15.8908V18.7376H20.924V14.6523C20.924 14.6523 20.5619 6.16064 27.9106 6.16064H33.855V11.837H30.151C30.151 11.837 27.425 11.6891 27.3953 14.5026V18.7376H33.3877L32.5235 24.3089H27.336V39.9998H20.924V39.8018Z"
+              fill="#FF9B9F"
+            />
+          </svg>
+        </a>
+        <a href="http://github.com/entrydsm">
+          <svg
+            style={{ margin: "15px" }}
+            width="41"
+            height="45"
+            viewBox="0 0 41 45"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="5" width="40" height="40" rx="10" fill="white" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.93694 0.777832C1.70964 0.777832 0.714722 1.77275 0.714722 3.00005C0.714722 1.77672 1.70917 0.777832 2.93694 0.777832ZM14.0502 40.7778H27.3781C25.6753 40.7758 25.6753 39.2036 25.6753 38.6734C25.6753 38.4556 25.6778 38.074 25.6813 37.5639C25.6882 36.5357 25.6986 34.9854 25.6986 33.2023C25.6986 31.3423 25.0592 30.1289 24.3419 29.5101C28.7953 29.0167 33.4742 27.3306 33.4742 19.6734C33.4742 17.4967 32.6981 15.7184 31.4158 14.3217C31.6236 13.8201 32.3086 11.7923 31.2197 9.04617C31.2197 9.04617 29.5425 8.51006 25.7253 11.0895C24.1269 10.6478 22.4147 10.4262 20.7147 10.4189C19.0153 10.4262 17.3042 10.6478 15.7086 11.0895C11.8869 8.51006 10.2075 9.04617 10.2075 9.04617C9.12139 11.7923 9.80583 13.8201 10.0142 14.3217C8.73417 15.7178 7.95306 17.4967 7.95306 19.6734C7.95306 27.3123 12.6231 29.0217 17.0653 29.5256C16.4931 30.0239 15.9747 30.9034 15.7953 32.1923C14.6542 32.7012 11.7586 33.5828 9.97528 30.5345C9.97528 30.5345 8.9175 28.6206 6.90917 28.4801C6.90917 28.4801 4.95806 28.4551 6.7725 29.6923C6.7725 29.6923 8.08361 30.3051 8.99306 32.6095C8.99306 32.6095 10.1675 36.1673 15.7314 34.9617C15.7362 35.8553 15.7436 36.7215 15.7496 37.406C15.7547 37.9973 15.7586 38.453 15.7586 38.6734C15.7586 39.1997 15.1599 40.7758 14.0502 40.7778ZM38.4954 40.7778C39.7214 40.7763 40.7147 39.7819 40.7147 38.5556C40.714 39.145 40.4795 39.7099 40.0626 40.1265C39.6468 40.5422 39.0833 40.7763 38.4954 40.7778ZM7.94694 29.4634C8.08972 29.5312 8.24528 29.5017 8.28972 29.4028C8.33972 29.3034 8.2575 29.1667 8.11194 29.1017C7.9675 29.0334 7.81083 29.0617 7.7675 29.1639C7.72028 29.2634 7.80194 29.3984 7.94694 29.4634ZM8.69139 30.2112C8.81806 30.3506 9.00472 30.3917 9.09972 30.3028V30.3034C9.19972 30.2139 9.17417 30.0295 9.04306 29.8889C8.91194 29.7501 8.73139 29.7084 8.63306 29.7967C8.53583 29.8862 8.56083 30.0723 8.69139 30.2112ZM9.44194 31.2795C9.56583 31.4573 9.76639 31.5362 9.88861 31.4517C10.0136 31.3645 10.0136 31.1523 9.89139 30.9717C9.76639 30.7956 9.56861 30.7195 9.44417 30.8045C9.31917 30.8895 9.31917 31.1017 9.44194 31.2795ZM10.4547 32.4845C10.6258 32.6489 10.8592 32.6812 10.9686 32.5606C11.0858 32.4417 11.0325 32.2123 10.8592 32.0512C10.6869 31.8884 10.4525 31.8545 10.3414 31.9751C10.2314 32.0956 10.2797 32.3234 10.4547 32.4845ZM11.9592 33.3662C12.1858 33.4323 12.4108 33.3606 12.4592 33.2051H12.4597C12.5064 33.0462 12.3581 32.8645 12.1319 32.7967C11.9036 32.7256 11.6781 32.7995 11.6314 32.9567C11.5853 33.1145 11.7331 33.2973 11.9592 33.3662ZM13.6719 33.6284C13.9097 33.6251 14.1014 33.4889 14.0958 33.3245C14.0958 33.1612 13.9014 33.0289 13.6636 33.0334C13.4242 33.0373 13.2364 33.1723 13.2364 33.3384C13.2392 33.5006 13.4331 33.6334 13.6719 33.6284ZM15.2464 33.4351C15.4825 33.3912 15.6475 33.2262 15.6192 33.0662H15.6186C15.5892 32.9028 15.3775 32.8062 15.1408 32.8473C14.9086 32.8901 14.7408 33.0545 14.7697 33.2189C14.7992 33.3784 15.0142 33.4773 15.2464 33.4351Z"
+              fill="#FF9B9F"
+            />
+          </svg>
+        </a>
+      </S.Introduce>
+    </S.MainFooter>
+  );
 }
-
-const MainFooter = styled.footer`
-    height: 304px;
-    background-color: #FF9B9F;
-    color: white;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400;
-    white-space: pre-wrap;
-    display: flex;
-    justify-content: center;
-`;
-const Contentsdiv =styled.div`
-    line-height :34px;
-    padding-top: 26px;
-`;
-const Contentsa = styled.div`
-    font-size:18px;
-`;
-const Entry = styled.a`
-    font-size: 40px;
-    font-weight: 700;
-`;
-const Introduce = styled.div`
-    padding-left: 369px;
-    padding-top: 44px;
-`;
-const Introducea = styled.a`
-    font-size: 20px;
-    line-height: 45px;
-    margin-left: 17px;
-    color: #ffffff;
-    text-decoration: none;
-`;
-const Image = styled.img`
-    margin: 15px;
-`;
 
 export default Footer;
