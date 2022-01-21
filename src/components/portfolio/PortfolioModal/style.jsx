@@ -55,7 +55,7 @@ export const ProjectInfo = styled.p`
     font-family: 'Noto Sans KR', sans-serif;
 `
 export const ModalContentImg = styled.img`
-    background-image: url(${props=>props.img});
+    background-image: url(${props => props.img});
     width: 1000px;
     height: 466.67px;
     background-repeat: no-repeat;
@@ -78,5 +78,5 @@ export const Developer = styled.p`
     font-style: normal;
     font-size: 20px;
     line-height: 27.24px;
-    margin-top: ${props=>props.marginTop || '0'}px;
+    margin-top: ${props => props.marginTop || '0'}px;
 `

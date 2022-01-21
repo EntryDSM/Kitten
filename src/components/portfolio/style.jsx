@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.section`
     width: 100%;
     height: 970px;
-    background-image: url(${props=>props.img});
+    background-image: url(${props => props.img});
     padding-top: 80px;
 `
 export const Content = styled.section`
@@ -91,7 +91,7 @@ export const EachModalBox = styled.div`
     }
 `
 export const Magnifier = styled.section`
-    background-image: url(${props=>props.backImg});
+    background-image: url(${props => props.backImg});
     background-repeat : no-repeat;
     background-size : cover;
     position: absolute;
